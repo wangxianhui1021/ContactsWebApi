@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using TestApi.Controllers;
 using TestApi.Models;
+using System.Linq;
 using Xunit;
 using TestApi.DataAccess;
+using TestApi.Tests;
 
 
 
@@ -14,26 +16,23 @@ namespace TestApi.Tests
     
     public class TestContactsController
     {
+        ContactsController _controller;
+        IContactsDataAccess _dataAccess;
+        public TestContactsController()
+        {
+            _dataAccess = new ContactsDataAccessFake();
+            _controller = new ContactsController(_dataAccess);
+            
+        }
         [Fact]
         public void GetAllContacts_ShouldReturnAllContacts()
         {
-            var testContacts = GetTestContacts();
-            var controller = new ContactsController();
-
-            var result = controller.GetContacts() as List<Contact>;
-            Assert.Equal(testContacts, result);
+            var items= _dataAccess.GetAllContacts();
+            var results = _controller.GetContacts();
+            Assert.Equal(items, results);
         }
 
 
-        private List<Contact> GetTestContacts()
-        {
-            var testContacts = new List<Contact>();
-            testContacts.Add(new Contact { Id = 1, FirstName = "Joe", LastName="Smith" , Email = "joesmith@gmail.com" });
-            testContacts.Add(new Contact { Id = 2, FirstName = "Mary", LastName="Strong" , Email = "joesmith@gmail.com" });
-            testContacts.Add(new Contact { Id = 3, FirstName = "Bob", LastName="Williams" , Email = "joesmith@gmail.com" });
-            testContacts.Add(new Contact { Id = 4, FirstName = "Harry", LastName="Porter" , Email = "joesmith@gmail.com" });
-
-            return testContacts;
-        }
+        
     }
 }

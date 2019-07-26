@@ -12,19 +12,24 @@ namespace TestApi.Controllers
     [ApiController]
     public class ContactsController : ControllerBase
     {
-         static readonly IContactsDataAccess dataAccess = new ContactsDataAccess();
-        
+     //    static readonly IContactsDataAccess dataAccess = new ContactsDataAccess();
+        private readonly IContactsDataAccess _dataAccess = new ContactsDataAccess();
+        public ContactsController(IContactsDataAccess dataAccess)
+
+        {
+                _dataAccess = dataAccess;
+        }
         [HttpGet]
         //GET api/contacts
         public IEnumerable<Contact> GetContacts(){
             
-            return dataAccess.GetAllContacts().OrderBy(c => c.LastName).ThenBy(c => c.FirstName);
+            return _dataAccess.GetAllContacts().OrderBy(c => c.LastName).ThenBy(c => c.FirstName);
         
         }
         [HttpGet("DESC")]
         //GET api/contacts/desc
         public IEnumerable<Contact>GetContactsDesc(){
-            return dataAccess.GetAllContacts().OrderByDescending(c => c.LastName).ThenByDescending(c => c.FirstName);
+            return _dataAccess.GetAllContacts().OrderByDescending(c => c.LastName).ThenByDescending(c => c.FirstName);
 
         }
                 
@@ -32,7 +37,7 @@ namespace TestApi.Controllers
          [HttpGet("ID/{id}", Name = "GetContact")]
          //GET api/contacts/id/1
         public IActionResult GetContact(int id){
-            var contact = dataAccess.Get(id);
+            var contact = _dataAccess.Get(id);
             if (contact == null){
                return NotFound(); 
             }
@@ -43,7 +48,7 @@ namespace TestApi.Controllers
          [HttpGet("LASTNAME/{lastname}")]
          //GET api/contacts/lastname/person's_lastname
          public IEnumerable <Contact> GetContactByLastName( string lastname){
-            return dataAccess.GetAllContacts().Where(
+            return _dataAccess.GetAllContacts().Where(
                  c => string.Equals(c.LastName, lastname, StringComparison.OrdinalIgnoreCase)).OrderBy(c => c.LastName);
              
 
@@ -53,7 +58,7 @@ namespace TestApi.Controllers
 
         public Contact CreateContact([FromBody] Contact contact){
             
-             dataAccess.Add(contact);
+             _dataAccess.Add(contact);
 
             return contact;
 
