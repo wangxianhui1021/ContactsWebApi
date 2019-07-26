@@ -1,0 +1,17 @@
+/Users/lizzy/Desktop/ClarkCodingChallenge_Wang/TestApi.Tests/obj/Debug/netcoreapp2.2/TestApi.Tests.csprojAssemblyReference.cache
+/Users/lizzy/Desktop/ClarkCodingChallenge_Wang/TestApi.Tests/obj/Debug/netcoreapp2.2/TestApi.Tests.csproj.CoreCompileInputs.cache
+/Users/lizzy/Desktop/ClarkCodingChallenge_Wang/TestApi.Tests/obj/Debug/netcoreapp2.2/TestApi.Tests.AssemblyInfoInputs.cache
+/Users/lizzy/Desktop/ClarkCodingChallenge_Wang/TestApi.Tests/obj/Debug/netcoreapp2.2/TestApi.Tests.AssemblyInfo.cs
+/Users/lizzy/Desktop/ClarkCodingChallenge_Wang/TestApi.Tests/bin/Debug/netcoreapp2.2/xunit.runner.visualstudio.dotnetcore.testadapter.dll
+/Users/lizzy/Desktop/ClarkCodingChallenge_Wang/TestApi.Tests/bin/Debug/netcoreapp2.2/xunit.runner.reporters.netcoreapp10.dll
+/Users/lizzy/Desktop/ClarkCodingChallenge_Wang/TestApi.Tests/bin/Debug/netcoreapp2.2/xunit.runner.utility.netcoreapp10.dll
+/Users/lizzy/Desktop/ClarkCodingChallenge_Wang/TestApi.Tests/bin/Debug/netcoreapp2.2/TestApi.Tests.deps.json
+/Users/lizzy/Desktop/ClarkCodingChallenge_Wang/TestApi.Tests/bin/Debug/netcoreapp2.2/TestApi.Tests.runtimeconfig.json
+/Users/lizzy/Desktop/ClarkCodingChallenge_Wang/TestApi.Tests/bin/Debug/netcoreapp2.2/TestApi.Tests.runtimeconfig.dev.json
+/Users/lizzy/Desktop/ClarkCodingChallenge_Wang/TestApi.Tests/bin/Debug/netcoreapp2.2/TestApi.Tests.dll
+/Users/lizzy/Desktop/ClarkCodingChallenge_Wang/TestApi.Tests/bin/Debug/netcoreapp2.2/TestApi.Tests.pdb
+/Users/lizzy/Desktop/ClarkCodingChallenge_Wang/TestApi.Tests/bin/Debug/netcoreapp2.2/TestApi.dll
+/Users/lizzy/Desktop/ClarkCodingChallenge_Wang/TestApi.Tests/bin/Debug/netcoreapp2.2/TestApi.pdb
+/Users/lizzy/Desktop/ClarkCodingChallenge_Wang/TestApi.Tests/obj/Debug/netcoreapp2.2/TestApi.Tests.csproj.CopyComplete
+/Users/lizzy/Desktop/ClarkCodingChallenge_Wang/TestApi.Tests/obj/Debug/netcoreapp2.2/TestApi.Tests.dll
+/Users/lizzy/Desktop/ClarkCodingChallenge_Wang/TestApi.Tests/obj/Debug/netcoreapp2.2/TestApi.Tests.pdb

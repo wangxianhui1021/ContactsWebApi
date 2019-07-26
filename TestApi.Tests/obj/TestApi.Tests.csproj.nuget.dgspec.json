@@ -1,0 +1,139 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/lizzy/Desktop/ClarkCodingChallenge_Wang/TestApi.Tests/TestApi.Tests.csproj": {}
+  },
+  "projects": {
+    "/Users/lizzy/Desktop/ClarkCodingChallenge_Wang/TestApi.Tests/TestApi.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/lizzy/Desktop/ClarkCodingChallenge_Wang/TestApi.Tests/TestApi.Tests.csproj",
+        "projectName": "TestApi.Tests",
+        "projectPath": "/Users/lizzy/Desktop/ClarkCodingChallenge_Wang/TestApi.Tests/TestApi.Tests.csproj",
+        "packagesPath": "/Users/lizzy/.nuget/packages/",
+        "outputPath": "/Users/lizzy/Desktop/ClarkCodingChallenge_Wang/TestApi.Tests/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/lizzy/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "/Users/lizzy/Desktop/ClarkCodingChallenge_Wang/TestApi/TestApi.csproj": {
+                "projectPath": "/Users/lizzy/Desktop/ClarkCodingChallenge_Wang/TestApi/TestApi.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.0.1, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "/Users/lizzy/Desktop/ClarkCodingChallenge_Wang/TestApi/TestApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/lizzy/Desktop/ClarkCodingChallenge_Wang/TestApi/TestApi.csproj",
+        "projectName": "TestApi",
+        "projectPath": "/Users/lizzy/Desktop/ClarkCodingChallenge_Wang/TestApi/TestApi.csproj",
+        "packagesPath": "/Users/lizzy/.nuget/packages/",
+        "outputPath": "/Users/lizzy/Desktop/ClarkCodingChallenge_Wang/TestApi/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/lizzy/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
